@@ -8,9 +8,9 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn import preprocessing
 import matplotlib.pyplot as plt
 
-
-
-df=pd.read_csv(r'C:\Users\gonsa\Downloads\vgsales.csv')           # loading data
+# LOADING DATA 
+file_path = input("input file path: ")                            # taking the file path and putting it in the value 'df'
+df=pd.read_csv(file_path)           
 global_sales_mean = df['Global_Sales'].mean()
 df['Global_sales_mean'] = global_sales_mean
 
